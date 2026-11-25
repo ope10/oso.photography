@@ -1,0 +1,560 @@
+import { Project, ServiceCategory, TimelineItem, StatItem, Testimonial, FaqItem } from "@/types";
+
+export const SITE_CONFIG = {
+  name: "OSO.PHOTOGRAPHY",
+  shortName: "OSO",
+  fullName: "OSO.PHOTOGRAPHY",
+  brandSubtitle: "A MORE MEANINGFUL HOME FOR PHOTOGRAPHY",
+  email: "oluonisamuel8@gmail.com",
+  inquiryEmail: "oluonisamuel8@gmail.com",
+  phone: "+234 815 286 2358",
+  altPhone: "+234 815 286 2358",
+  location: "Ado-Ekiti & Worldwide",
+  availability: "Currently Accepting Bookings for 2026/2027",
+  socials: [
+    { name: "Instagram", url: "https://www.instagram.com/o.s.o_photography?utm_source=ig_web_button_share_sheet&hvrq=ZDNlZDc0MzIxNw==" },
+    { name: "Twitter", url: "https://twitter.com" },
+    { name: "LinkedIn", url: "https://linkedin.com" },
+    { name: "Facebook", url: "https://facebook.com" },
+  ],
+};
+
+export const MARQUEE_ITEMS = [
+  "PORTRAIT PHOTOGRAPHY",
+  "EVENT PHOTOGRAPHY",
+  "COMMERCIAL & BRANDING",
+  "WEDDING DOCUMENTARY",
+  "EDITORIAL & FINE ART",
+  "ARCHITECTURAL SPACES",
+];
+
+export const ABOUT_STATS: StatItem[] = [
+  { value: "7+", label: "Years of Experience" },
+  { value: "100+", label: "Projects Completed" },
+  // { value: "12+", label: "International Awards" },
+  { value: "03+", label: "Exhibitions & Workshops" },
+  // { value: "15,000+", label: "Global Community" },
+  { value: "90%", label: "Client Retention Rate" },
+];
+
+export const TIMELINE: TimelineItem[] = [
+  {
+    year: "YEAR - 2005",
+    title: "Foundations in Film",
+    description:
+      "In 2005, OSO began working with mechanical 35mm cameras, capturing raw street textures and the interplay of California sun and harsh concrete shadows.",
+  },
+  {
+    year: "YEAR - 2010",
+    title: "First Commissioned Editorial",
+    description:
+      "Commissioned by independent fashion houses and print publications, establishing a signature dark, atmospheric lighting style.",
+  },
+  {
+    year: "YEAR - 2012",
+    title: "Commercial & Brand Productions",
+    description:
+      "Expanded into large-scale commercial campaigns, translating authentic human stories into striking visual branding for international clients.",
+  },
+  {
+    year: "YEAR - 2015",
+    title: "Solo Fine Art Exhibitions",
+    description:
+      "Held debut gallery exhibitions across San Francisco, New York, and London, receiving widespread acclaim for black-and-white chiaroscuro prints.",
+  },
+  {
+    year: "YEAR - 2018",
+    title: "International Recognition",
+    description:
+      "Awarded 'Editorial Photographer of the Year' by the Photographic Society and invited to lead workshops across Europe and Asia.",
+  },
+  {
+    year: "YEAR - 2022",
+    title: "OSO.PHOTOGRAPHY Flagship",
+    description:
+      "Established the OSO.PHOTOGRAPHY private studio, offering bespoke portraiture, luxury wedding coverage, and global commercial campaigns.",
+  },
+];
+
+export const PORTFOLIO_PROJECTS: { [key: string]: Project[] } = {
+  portraits: [
+    {
+      id: "portrait-1",
+      title: "Faces of Resilience",
+      category: "portraits",
+      categoryLabel: "Portraits Photography",
+      date: "March 2024",
+      image: "/images/portfolio/portraits/SaveClip.App_842005568_18096561902401908_3276479837191798604_n.jpg",
+      description: "An evocative study in chiaroscuro lighting capturing human resilience, dignity, and inner character.",
+      client: "Editorial Magazine",
+      camera: "Leica M11",
+      lens: "Summilux-M 50mm f/1.4",
+      iso: "ISO 100 • 1/500s • f/1.4",
+    },
+    {
+      id: "portrait-2",
+      title: "Innocence Unveiled",
+      category: "portraits",
+      categoryLabel: "Portraits Photography",
+      date: "January 2024",
+      image: "/images/portfolio/portraits/SaveClip.App_533822235_18053573957401908_7117940550953721696_n.jpg",
+      description: "Candid environmental portraiture exploring authentic expression, natural morning light, and expressive contours.",
+      client: "Youth Culture Series",
+      camera: "Sony A7R V",
+      lens: "FE 85mm f/1.4 GM",
+      iso: "ISO 160 • 1/800s • f/1.8",
+    },
+    {
+      id: "portrait-3",
+      title: "Inner Reflections",
+      category: "portraits",
+      categoryLabel: "Portraits Photography",
+      date: "July 2023",
+      image: "/images/portfolio/portraits/SaveClip.App_563205013_18059783912401908_7505779442811897125_n.jpg",
+      description: "Studio portraiture utilizing sculpted directional lighting to explore contemplation and quiet introspection.",
+      client: "Fine Art Series",
+      camera: "Hasselblad X2D 100C",
+      lens: "XCD 90mm f/2.5",
+      iso: "ISO 64 • 1/250s • f/4.0",
+    },
+    {
+      id: "portrait-4",
+      title: "Silent Echoes",
+      category: "portraits",
+      categoryLabel: "Portraits Photography",
+      date: "November 2023",
+      image: "/images/portfolio/portraits/SaveClip.App_527121323_18052434761401908_3108714543498238227_n.jpg",
+      description: "High-contrast monochrome character study examining posture, shadows, and expressive geometry.",
+      client: "Independent Artist",
+      camera: "Leica SL2-S",
+      lens: "APO-Summicron 75mm",
+      iso: "ISO 100 • 1/200s • f/2.0",
+    },
+    {
+      id: "portrait-5",
+      title: "Golden Solitude",
+      category: "portraits",
+      categoryLabel: "Portraits Photography",
+      date: "February 2024",
+      image: "/images/portfolio/portraits/SaveClip.App_581248711_18063549992401908_4034146582270996108_n.jpg",
+      description: "Sun-drenched late afternoon natural portrait along the coastal ridges.",
+      client: "Lookbook Campaign",
+      camera: "Sony A1",
+      lens: "FE 50mm f/1.2 GM",
+      iso: "ISO 200 • 1/1200s • f/1.2",
+    },
+    {
+      id: "portrait-6",
+      title: "Chroma & Soul",
+      category: "portraits",
+      categoryLabel: "Portraits Photography",
+      date: "April 2024",
+      image: "/images/portfolio/portraits/SaveClip.App_813976633_18094336295401908_1336197478105056215_n.jpg",
+      description: "Atmospheric editorial portrait exploring rich textures and vibrant shadows.",
+      client: "Vogue Editorial",
+      camera: "Canon EOS R5",
+      lens: "RF 85mm f/1.2",
+      iso: "ISO 100 • 1/640s • f/1.4",
+    },
+    {
+      id: "portrait-7",
+      title: "Monochrome Gaze",
+      category: "portraits",
+      categoryLabel: "Portraits Photography",
+      date: "June 2024",
+      image: "/images/portfolio/portraits/SaveClip.App_663135140_18077920922401908_6932500531879842245_n.jpg",
+      description: "Direct studio portraiture emphasizing authentic character and emotional depth.",
+      client: "Private Series",
+      camera: "Leica M11",
+      lens: "Noctilux 50mm",
+      iso: "ISO 100 • 1/400s • f/1.0",
+    },
+    {
+      id: "portrait-8",
+      title: "Urban Presence",
+      category: "portraits",
+      categoryLabel: "Portraits Photography",
+      date: "August 2024",
+      image: "/images/portfolio/portraits/SaveClip.App_518045190_18378451081133592_7585397783251995461_n.jpg",
+      description: "Environmental street portrait captured amidst metropolitan architectural reflections.",
+      client: "Street Chronicles",
+      camera: "Sony A7R V",
+      lens: "FE 35mm f/1.4",
+      iso: "ISO 250 • 1/800s • f/2.0",
+    },
+    {
+      id: "portrait-9",
+      title: "Raw Vulnerability",
+      category: "portraits",
+      categoryLabel: "Portraits Photography",
+      date: "October 2024",
+      image: "/images/portfolio/portraits/SaveClip.App_526485702_18052433747401908_2703716875518215395_n.jpg",
+      description: "Intimate and unguarded portraiture celebrating natural facial emotion and honest lighting.",
+      client: "Soul Study",
+      camera: "Hasselblad X2D",
+      lens: "XCD 90mm",
+      iso: "ISO 64 • 1/200s • f/2.8",
+    },
+  ],
+  events: [
+    {
+      id: "event-1",
+      title: "A Wedding Tale",
+      category: "events",
+      categoryLabel: "Events Photography",
+      date: "September 2023",
+      image: "/images/portfolio/events/SaveClip.App_813613939_18094336319401908_214447257090949578_n.jpg",
+      description: "Documentary-style celebration capturing the intimate glances, joyous tears, and timeless sunset vows.",
+      client: "Private Client",
+      camera: "Sony A1",
+      lens: "FE 35mm f/1.4 GM",
+      iso: "ISO 200 • 1/1000s • f/2.0",
+    },
+    {
+      id: "event-2",
+      title: "Corporate Gala",
+      category: "events",
+      categoryLabel: "Events Photography",
+      date: "November 2023",
+      image: "/images/portfolio/events/SaveClip.App_912686907_18100961393401908_7928819583661249058_n.jpg",
+      description: "Comprehensive coverage of an executive summit and evening gala bathed in dramatic banquet lighting.",
+      client: "Global Tech Summit",
+      camera: "Sony A7R V",
+      lens: "FE 24-70mm f/2.8 GM II",
+      iso: "ISO 1600 • 1/250s • f/2.8",
+    },
+    {
+      id: "event-3",
+      title: "Vibrant Celebration",
+      category: "events",
+      categoryLabel: "Events Photography",
+      date: "May 2024",
+      image: "/images/portfolio/events/SaveClip.App_916388621_18100963505401908_5272384762540746217_n.jpg",
+      description: "Capturing the explosive rhythm, dance, and candid euphoria at an open-air cultural celebration.",
+      client: "Vibe Culture Fest",
+      camera: "Canon EOS R5",
+      lens: "RF 50mm f/1.2L",
+      iso: "ISO 800 • 1/640s • f/1.8",
+    },
+    {
+      id: "event-4",
+      title: "Intimate Vows",
+      category: "events",
+      categoryLabel: "Events Photography",
+      date: "July 2024",
+      image: "/images/portfolio/events/SaveClip.App_715478164_18083676551401908_7346834714251649209_n.jpg",
+      description: "Private seaside ceremony documenting sacred family exchanges and natural emotions.",
+      client: "Private Client",
+      camera: "Sony A7R V",
+      lens: "FE 50mm f/1.2",
+      iso: "ISO 100 • 1/800s • f/1.4",
+    },
+    {
+      id: "event-5",
+      title: "Grand Evening Reception",
+      category: "events",
+      categoryLabel: "Events Photography",
+      date: "August 2024",
+      image: "/images/portfolio/events/SaveClip.App_916851972_18100963604401908_5957783898973844989_n.jpg",
+      description: "Evening celebrations under ambient chandeliers, filled with candid joy and celebration.",
+      client: "Heritage Gala",
+      camera: "Sony A1",
+      lens: "FE 24-70mm f/2.8",
+      iso: "ISO 2500 • 1/200s • f/2.8",
+    },
+    {
+      id: "event-6",
+      title: "Historic Milestone",
+      category: "events",
+      categoryLabel: "Events Photography",
+      date: "September 2024",
+      image: "/images/portfolio/events/SaveClip.App_713524249_18083170595401908_5758303719801698727_n.jpg",
+      description: "Chamber orchestra concert and ceremony framed with cinematic grandeur.",
+      client: "Arts Foundation",
+      camera: "Sony A7S III",
+      lens: "FE 85mm f/1.4",
+      iso: "ISO 3200 • 1/250s • f/2.0",
+    },
+    {
+      id: "event-7",
+      title: "Festival Nocturne",
+      category: "events",
+      categoryLabel: "Events Photography",
+      date: "October 2024",
+      image: "/images/portfolio/events/SaveClip.App_490351558_18042303254401908_2606737623449591182_n.jpg",
+      description: "Live performance stage bathed in saturated neon haze and crowd choreography.",
+      client: "Soundscape Fest",
+      camera: "Canon R5",
+      lens: "RF 28-70mm f/2.0",
+      iso: "ISO 4000 • 1/320s • f/2.0",
+    },
+  ],
+  commercial: [
+    {
+      id: "commercial-1",
+      title: "Product Elegance",
+      category: "commercial",
+      categoryLabel: "Commercial Photography",
+      date: "August 2023",
+      image: "/images/portfolio/commercials/SaveClip.App_825352143_18095548679401908_6986020635914512600_n.jpg",
+      description: "Minimalist studio composition highlighting luxury textures, reflections, and precision packaging.",
+      client: "Aura Luxe Cosmetics",
+      camera: "Hasselblad X2D 100C",
+      lens: "XCD 120mm Macro",
+      iso: "ISO 64 • 1/160s • f/8.0",
+    },
+    {
+      id: "commercial-2",
+      title: "Artisanal Essence",
+      category: "commercial",
+      categoryLabel: "Commercial Photography",
+      date: "October 2023",
+      image: "/images/portfolio/commercials/SaveClip.App_825325548_18095548130401908_4856969068733397086_n.jpg",
+      description: "Brand campaign detailing artisanal craftsmanship, material integrity, and tactile luxury.",
+      client: "Maison Craft",
+      camera: "Sony A7R V",
+      lens: "FE 50mm f/1.2 GM",
+      iso: "ISO 100 • 1/400s • f/2.8",
+    },
+    {
+      id: "commercial-3",
+      title: "Urban Fashion Lookbook",
+      category: "commercial",
+      categoryLabel: "Commercial Photography",
+      date: "April 2024",
+      image: "/images/projects/SaveClip.App_519362056_18378451099133592_7516664975679823844_n.jpg",
+      description: "Contemporary fashion campaign framed within modern architectural geometry.",
+      client: "L'Etoile Atelier",
+      camera: "Leica SL2-S",
+      lens: "APO-Summicron 75mm",
+      iso: "ISO 100 • 1/500s • f/2.0",
+    },
+    {
+      id: "commercial-4",
+      title: "Timepiece Precision",
+      category: "commercial",
+      categoryLabel: "Commercial Photography",
+      date: "July 2024",
+      image: "/images/hero/SaveClip.App_573236255_18062381198401908_6215469938716719068_n.jpg",
+      description: "Micro-macro horology study focusing on sapphire crystal reflections and mechanical depth.",
+      client: "Chronos Atelier",
+      camera: "Hasselblad X2D 100C",
+      lens: "XCD 120mm Macro",
+      iso: "ISO 64 • 1/125s • f/11",
+    },
+    {
+      id: "commercial-5",
+      title: "Architectural Monoliths",
+      category: "commercial",
+      categoryLabel: "Commercial Photography",
+      date: "September 2024",
+      image: "/images/hero/SaveClip.App_514398312_18049231736401908_8821894637533841440_n.jpg",
+      description: "Commercial architectural photography of sustainable luxury residences.",
+      client: "Studio Arch",
+      camera: "Fujifilm GFX 100 II",
+      lens: "GF 23mm f/4",
+      iso: "ISO 100 • 1/640s • f/8.0",
+    },
+  ],
+};
+
+export const SERVICES_PAGE_DATA: ServiceCategory[] = [
+  {
+    id: "portrait-photography",
+    title: "PORTRAIT PHOTOGRAPHY",
+    description:
+      "Capturing the essence of individuals, couples, and creative artists through tailored portraiture that emphasizes authenticity, soul, and intentional lighting.",
+    image: "/images/portfolio/portraits/SaveClip.App_842005568_18096561902401908_3276479837191798604_n.jpg",
+    subPackages: [
+      {
+        title: "Individual Session",
+        price: "₦250,000",
+        unit: "/ session",
+        features: [
+          "1-hour session at custom location or studio",
+          "10 professionally retouched high-resolution images",
+          "Online gallery for proofing and downloads",
+        ],
+      },
+      {
+        title: "Family Session",
+        price: "₦400,000",
+        unit: "/ session",
+        features: [
+          "Up to 2-hour session for immediate family",
+          "25 edited digital photos with print release",
+          "Wardrobe and styling guidance included",
+        ],
+      },
+      {
+        title: "Couple Session",
+        price: "₦300,000",
+        unit: "/ session",
+        features: [
+          "90-minute sunset or studio session",
+          "15 edited images, customized locations",
+          "Sneak peek delivered within 24 hours",
+        ],
+      },
+    ],
+  },
+  {
+    id: "events-photography",
+    title: "EVENTS PHOTOGRAPHY",
+    description:
+      "Documenting weddings, private parties, galas, and celebrations with an unobtrusive documentary eye, freezing raw joy and historic milestones.",
+    image: "/images/portfolio/events/SaveClip.App_719452266_18084073979401908_6806444195714081843_n.jpg",
+    subPackages: [
+      {
+        title: "Wedding Coverage",
+        price: "₦1,500,000",
+        unit: "/ event",
+        features: [
+          "6 hours of continuous coverage by OSO.PHOTOGRAPHY",
+          "300+ color-graded images delivered in high-res",
+          "Pre-wedding consultation and timeline planning",
+        ],
+      },
+      {
+        title: "Party Coverage",
+        price: "₦800,000",
+        unit: "/ event",
+        features: [
+          "4 hours of candid event and party photography",
+          "150 edited photos in a private digital gallery",
+          "Rapid 48-hour delivery for social sharing",
+        ],
+      },
+      {
+        title: "Corporate Events",
+        price: "Custom Pricing",
+        unit: "",
+        features: [
+          "Comprehensive multi-day or single-day summit coverage",
+          "On-site headshots and executive candid moments",
+          "Commercial license and expedited PR asset delivery",
+        ],
+      },
+    ],
+  },
+  {
+    id: "commercial-photography",
+    title: "COMMERCIAL PHOTOGRAPHY",
+    description:
+      "Elevating brands through striking product imagery, architectural spaces, and high-impact visual campaigns tailored for multi-channel advertising.",
+    image: "/images/portfolio/commercials/SaveClip.App_825352143_18095548679401908_6986020635914512600_n.jpg",
+    subPackages: [
+      {
+        title: "Product Photography",
+        price: "₦500,000",
+        unit: "/ shoot",
+        features: [
+          "Studio tabletop setup with professional lighting",
+          "10 hero product shots on custom backdrops",
+          "High-end commercial retouching included",
+        ],
+      },
+      {
+        title: "Real Estate Photography",
+        price: "₦700,000",
+        unit: "/ shoot",
+        features: [
+          "Full interior and exterior architectural coverage",
+          "Twilight shots, HDR blending, and wide angles",
+          "MLS-ready and print-ready high-res files",
+        ],
+      },
+      {
+        title: "Brand Campaign",
+        price: "Custom Pricing",
+        unit: "",
+        features: [
+          "End-to-end creative direction, casting, location scout",
+          "Multi-day production with model and product coverage",
+          "Full global usage rights across all media",
+        ],
+      },
+    ],
+  },
+];
+
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    id: "1",
+    name: "Kosi Innocentia",
+    location: "Nigeria",
+    avatar: "/images/testimonials/avatar-1.svg",
+    quote:
+      "Working with OSO.PHOTOGRAPHY was an unforgettable experience. The pictures captured the real essence of my personality and every detail was so refined and artistic. Absolutely world-class!",
+    rating: 5,
+  },
+  {
+    id: "2",
+    name: "Bryan Bazuaye",
+    location: "Nigeria",
+    avatar: "/images/testimonials/avatar-2.svg",
+    quote:
+      "OSO's eye for creative angles and lighting is truly unmatched. He made me feel completely comfortable and natural throughout the session, and the final portraits exceeded all my expectations.",
+    rating: 5,
+  },
+  {
+    id: "3",
+    name: "Folorunso Francisca",
+    location: "Nigeria",
+    avatar: "/images/testimonials/avatar-3.svg",
+    quote:
+      "I was completely blown away by how vibrant, intentional, and timeless our photos turned out. OSO documented our special moments with so much grace, precision, and passion!",
+    rating: 5,
+  },
+];
+
+export const FAQS: FaqItem[] = [
+  {
+    id: "faq-1",
+    question: "What photography style does OSO.PHOTOGRAPHY specialize in?",
+    answer:
+      "We specialize in Portrait, Event, Commercial, and Fine Art photography, focusing on authentic emotion, architectural light, and timeless storytelling.",
+  },
+  {
+    id: "faq-2",
+    question: "How can I book an appointment or session?",
+    answer:
+      "You can book directly using our interactive booking calendar on the Contact page, or email oluonisamuel8@gmail.com directly. We will confirm your session slot promptly.",
+  },
+  {
+    id: "faq-3",
+    question: "What equipment do you use for your shoots?",
+    answer:
+      "We shoot primarily with medium format Hasselblad systems, Leica M and SL cameras, and Sony Alpha prime lenses, alongside analog 35mm/120 film upon request.",
+  },
+  {
+    id: "faq-4",
+    question: "Can I request a custom package for my event?",
+    answer:
+      "Yes! Every event has unique scope. We offer bespoke packages including multiple shooters, extended hours, rush editing, and luxury print albums.",
+  },
+  {
+    id: "faq-5",
+    question: "What is your typical turnaround time for deliverables?",
+    answer:
+      "Preview galleries are ready within 48 to 72 hours. Complete retouched galleries are delivered in 10-14 business days (and 4-6 weeks for full wedding coverage).",
+  },
+  {
+    id: "faq-6",
+    question: "Do you travel for international or destination shoots?",
+    answer:
+      "Yes, absolutely. A significant portion of our assignments take place globally. Travel logistics are handled seamlessly in the project quote.",
+  },
+  {
+    id: "faq-7",
+    question: "Are print releases and commercial licenses included?",
+    answer:
+      "Private sessions include full high-resolution digital rights and personal print releases. Commercial sessions include tailored worldwide licensing rights.",
+  },
+  {
+    id: "faq-8",
+    question: "What is your cancellation and rescheduling policy?",
+    answer:
+      "Sessions can be rescheduled up to 14 days prior without penalty. In unforeseen weather or travel circumstances, we work collaboratively to secure an alternate date.",
+  },
+];
