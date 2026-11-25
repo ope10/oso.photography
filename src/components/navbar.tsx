@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
@@ -23,7 +24,16 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full bg-[var(--bg-main)]/90 backdrop-blur-md border-b border-[var(--border-card)] transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         {/* Brand / Logo */}
-        <Link href="/" className="group flex items-center gap-2">
+        <Link href="/" className="group flex items-center gap-3">
+          <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden border border-[var(--border-card)] bg-[var(--bg-card)] group-hover:scale-105 transition-transform shrink-0">
+            <Image
+              src="/images/logo.png"
+              alt="OSO Logo"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
           <span className="text-xl md:text-2xl font-black tracking-widest text-[var(--text-primary)] uppercase">
             {SITE_CONFIG.name}
           </span>
