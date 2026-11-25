@@ -34,9 +34,9 @@ export function Navbar() {
               priority
             />
           </div>
-          <span className="text-xl md:text-2xl font-black tracking-widest text-[var(--text-primary)] uppercase">
+          {/* <span className="text-xl md:text-2xl font-black tracking-widest text-[var(--text-primary)] uppercase">
             {SITE_CONFIG.name}
-          </span>
+          </span> */}
         </Link>
 
         {/* Center Navigation Pill */}

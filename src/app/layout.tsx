@@ -9,13 +9,9 @@ export const metadata: Metadata = {
   description: "Official portfolio of OSO.PHOTOGRAPHY. Fine Art, Commercial, Portrait, and Event Photography based in California & available worldwide.",
   keywords: ["Photographer", "OSO.PHOTOGRAPHY", "Portfolio", "Commercial Photography", "Portrait", "Events", "Dark Theme UI", "Produce UI"],
   icons: {
-    icon: [
-      { url: "/icon.png", sizes: "512x512", type: "image/png" },
-      { url: "/favicon.ico" },
-    ],
-    apple: [
-      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
-    ],
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
   },
 };
 
@@ -27,8 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth">
       <head>
-        <link rel="icon" href="/icon.png" type="image/png" sizes="512x512" />
-        <link rel="apple-touch-icon" href="/apple-icon.png" sizes="180x180" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-icon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
